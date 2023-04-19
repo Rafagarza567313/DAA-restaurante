@@ -1,0 +1,12 @@
+:host{
+    color: rgb(50, 50, 50);
+}
+
+.reservation-card {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+
+mat-card-actions button {
+    margin-left: 10px;
+}
