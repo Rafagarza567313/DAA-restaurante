@@ -7,9 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
+import { MenuComponent } from './menu/menu.component';
+import { ReservationComponent } from './reservation/reservation.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, MenuComponent, ReservationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
