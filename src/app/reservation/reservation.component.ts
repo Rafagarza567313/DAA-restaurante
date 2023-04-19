@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validator, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reservation',
@@ -22,7 +22,7 @@ export class ReservationComponent implements OnInit {
     });
   }
 
-  formSubit(form: any){
+  formSubmit(form: any){
     alert("Gracias por reservar\n"+JSON.stringify(form.value, null,4));
   }
 

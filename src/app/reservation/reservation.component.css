@@ -10,3 +10,7 @@
 mat-card-actions button {
     margin-left: 10px;
 }
+
+.full-widith{
+    width: 100%;
+}
