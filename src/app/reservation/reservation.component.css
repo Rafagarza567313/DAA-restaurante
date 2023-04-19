@@ -11,6 +11,9 @@ mat-card-actions button {
     margin-left: 10px;
 }
 
+mat-form-field{
+    margin: 10px;
+}
 .full-widith{
     width: 100%;
 }
