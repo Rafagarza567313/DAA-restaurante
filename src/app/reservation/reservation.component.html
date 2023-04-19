@@ -32,7 +32,7 @@
             <!-- Date -->
             <mat-form-field>
                 <mat-label>Fecha</mat-label>
-                <input matInput [matDatepicker]="picker"formControlName="reservacionDate"/>
+                <input matInput [matDatepicker]="picker"formControlName="reservationDate"/>
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
@@ -40,7 +40,7 @@
             <!-- Schedule -->
             <mat-form-field>
                 <mat-label>Horario</mat-label>
-                <mat-select>
+                <mat-select formControlName="reservationSchedule">
                     <mat-option value="6"> 6:00 pm</mat-option>
                     <mat-option value="7"> 7:00 pm</mat-option>
                     <mat-option value="8"> 8:00 pm</mat-option>
