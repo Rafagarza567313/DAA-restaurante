@@ -1,61 +1,12 @@
-<mat-card class="menu-card">
-    <mat-card-header>
-      <mat-card-title>salmon</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/menu/salmon.jpg" alt="foto de salmon">
-    <mat-card-content>
-      <p>
-        lomos de salmón en la fuente de horno y salpimentamos. Pincelamos con la mezcla de miel y limón. Metemos en el horno precalentado durante 10 minutos
-      </p>
-    </mat-card-content>
-  </mat-card>
-  
-<mat-card class="menu-card">
-    <mat-card-header>
-      <mat-card-title>Lasaña</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/menu/lasaña.jpg" alt="foto de lasaña">
-    <mat-card-content>
-      <p>
-        Se sirve en láminas superpuestas intercaladas con capas de carne (ragú) en salsa boloñesa y bechamel
-      </p>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="menu-card">
-    <mat-card-header>
-      <mat-card-title>sandwich</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/menu/sandwich.jpg" alt="foto de sandwich">
-    <mat-card-content>
-      <p>
-        Nuestra jugosa carne artesanal. y la receta especial, vegetales frescos, pan recién horneado y nuestras salsas, harán que tu boca descubra el sabor.
-      </p>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="menu-card">
-    <mat-card-header>
-      <mat-card-title>Pasta</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/menu/pasta.jpg" alt="foto de pasta">
-    <mat-card-content>
-      <p>
-        Pasta carbonara tradicional de la cocina italiana, con tocino y queso parmesano
-      </p>
-    </mat-card-content>
-  </mat-card>
-  
-  <mat-card class="menu-card">
-    <mat-card-header>
-      <mat-card-title>pizza</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="../../assets/menu/pizza.jpg" alt="foto de pizza">
-    <mat-card-content>
-      <p>
-        la pizza gourmet le da la oportunidad al chef de reinventar lo clásico en algo nuevo y original, explorando combinaciones de sabores y texturas diferentes.
-      </p>
-    </mat-card-content>
-  </mat-card>
-
+<mat-card class="menu-card" *ngFor="let dish of menulist">
+  <mat-card-header>
+    <mat-card-title>{{dish.title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{dish.image}}"/>
+  <mat-card-content>
+    <p>
+      {{dish.description}}
+    </p>
+  </mat-card-content>
+</mat-card>
 

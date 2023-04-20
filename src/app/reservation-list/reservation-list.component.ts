@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { reservation } from '../_models/reservation.model';
 
 @Component({
   selector: 'app-reservation-list',
@@ -6,15 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./reservation-list.component.css']
 })
 export class ReservationListComponent {
-  reservations=[
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
-    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:"2023-03-30T06:00:00.000z", reservationSchedule:7},
+  reservations:reservation[]=[
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
+    {name:"Rafael Garza", email:"Rafael.garza.castillo@u-erre.mx", phone:"8123873054", people: 2, reservationDate:new Date("2023-03-30T06:00:00.000z"), reservationSchedule:7},
   ];
 
   displayedColumns: string[]=
