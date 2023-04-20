@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { LoginComponent } from './login/login.component';
+import { ReservationListComponent } from './reservation-list/reservation-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { LoginComponent } from './login/login.component';
     HomeComponent, 
     MenuComponent, 
     ReservationComponent, 
-    LoginComponent],
+    LoginComponent, ReservationListComponent],
     
   imports: [
     BrowserModule,
@@ -42,8 +44,9 @@ import { LoginComponent } from './login/login.component';
     MatSelectModule,
     MatFormFieldModule,
     MatIconModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
